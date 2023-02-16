@@ -71,6 +71,8 @@ export type ThemeGlobals = {
   '--lightbox-caption-background-color': string;
   '--lightbox-icon-stroke-color': string;
 
+  /* Avatar Size */
+  '--avatar-size': string;
   /* Avatar Border */
   '--avatar-border-color': string;
 
@@ -142,6 +144,7 @@ export const THEME_GLOBALS: ThemeGlobals = {
   '--lightbox-caption-background-color': 'rgba(192, 192, 192, .40)',
   '--lightbox-icon-stroke-color': 'var(--white-color)',
 
+  '--avatar-size': '36px',
   '--avatar-border-color': 'var(--transparent-color)',
 
   '--message-link-preview-background-color': `rgba(${hexColorToRGB(COLORS.BLACK)}, 0.06)`,

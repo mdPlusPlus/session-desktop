@@ -124,7 +124,7 @@ export const MessageAvatar = (props: Props) => {
   }, [userName, sender, isPublic, authorAvatarPath, selectedConvoKey]);
 
   if (!lastMessageOfSeries) {
-    return <div style={{ marginInlineEnd: 'calc(36px + var(--margins-xs))' }} key={`msg-avatar-${sender}`} />;
+    return <div style={{ marginInlineEnd: 'calc(var(--avatar-size) + var(--margins-xs))' }} key={`msg-avatar-${sender}`} />;
   }
 
   return (
