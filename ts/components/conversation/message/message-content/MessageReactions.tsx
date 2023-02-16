@@ -23,7 +23,7 @@ const StyledMessageReactionsContainer = styled(Flex)<{ x: number; y: number; noA
   }
 
   // MessageAvatar width + margin-inline-end
-  ${props => !props.noAvatar && 'margin-inline-start: calc(36px + 20px);'}
+  ${props => !props.noAvatar && 'margin-inline-start: calc(36px + var(--margins-xs));'}
 `;
 
 export const StyledMessageReactions = styled(Flex)<{ fullWidth: boolean }>`

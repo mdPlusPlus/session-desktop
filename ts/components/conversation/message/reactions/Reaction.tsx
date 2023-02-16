@@ -20,8 +20,8 @@ const StyledReaction = styled.button<{ selected: boolean; inModal: boolean; show
   border-color: ${props => (props.selected ? 'var(--primary-color)' : 'var(--transparent-color)')};
   border-radius: 11px;
   box-sizing: border-box;
-  padding: 0 7px;
-  margin: 0 4px var(--margins-sm);
+  padding: 0 7px 0 8px;
+  margin: 0 4px var(--margins-sm) 0;
   height: 24px;
   min-width: ${props => (props.showCount ? '48px' : '24px')};
 

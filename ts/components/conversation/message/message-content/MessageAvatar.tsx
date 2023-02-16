@@ -19,9 +19,9 @@ import { Avatar, AvatarSize, CrownIcon } from '../../../avatar/Avatar';
 
 const StyledAvatar = styled.div`
   position: relative;
-  margin-inline-end: 20px;
+  margin-inline-end: 0px;
   padding-bottom: 6px;
-  padding-inline-end: 4px;
+  padding-inline-end: var(--margins-xs);
 `;
 
 export type MessageAvatarSelectorProps = Pick<
@@ -124,7 +124,7 @@ export const MessageAvatar = (props: Props) => {
   }, [userName, sender, isPublic, authorAvatarPath, selectedConvoKey]);
 
   if (!lastMessageOfSeries) {
-    return <div style={{ marginInlineEnd: '60px' }} key={`msg-avatar-${sender}`} />;
+    return <div style={{ marginInlineEnd: 'calc(36px + var(--margins-xs))' }} key={`msg-avatar-${sender}`} />;
   }
 
   return (
